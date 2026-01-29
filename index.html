@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ant Colony Algorithms in Antivirus Optimization</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <h1 class="nav-title">ACO</h1>
+            <button class="hamburger" id="hamburger"><i class="fas fa-bars"></i></button>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#aco">ACO</a></li>
+                <li><a href="#av-opt">AV Optimization</a></li>
+                <li><a href="#model">Digital Model</a></li>
+                <li><a href="#improvements">Improvements</a></li>
+                <li><a href="#applications">Applications</a></li>
+                <li><a href="#comparison">Comparison</a></li>
+                <li><a href="#simulation">Simulation</a></li>
+                <li><a href="#conclusion">Conclusion</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Ant Colony Algorithms in Antivirus Optimization</h1>
+            <p class="hero-subtitle">Inspired by nature. Applied in engineering.</p>
+            <p class="hero-description">A biomimicry approach to intelligent cybersecurity systems</p>
+            <button class="glow-btn">Explore the Model</button>
+        </div>
+        <canvas id="particle-canvas"></canvas>
+    </section>
+
+    <!-- ACO Explanation -->
+    <section id="aco" class="section">
+        <div class="container">
+            <h2>What is Ant Colony Optimization?</h2>
+            <p class="section-subtitle">Understanding the natural inspiration behind the algorithm</p>
+            <div class="content-cards">
+                <div class="card">
+                    <div class="card-icon"><i class="fas fa-bug"></i></div>
+                    <h3>Natural Behavior</h3>
+                    <p>In nature, ants communicate through pheromone trails to find the shortest path to food sources. They deposit pheromones as they travel, and other ants follow stronger trails, reinforcing efficient paths over time.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><i class="fas fa-brain"></i></div>
+                    <h3>Algorithmic Translation</h3>
+                    <p>This behavior is translated into a mathematical optimization algorithm where artificial ants simulate this process to solve complex problems by exploring search spaces probabilistically.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Antivirus Optimization -->
+    <section id="av-opt" class="section alt-bg">
+        <div class="container">
+            <h2>Antivirus Software Optimization</h2>
+            <p class="section-subtitle">The challenge of efficient threat detection in modern systems</p>
+            <div class="content-cards">
+                <div class="card">
+                    <div class="card-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Traditional Challenges</h3>
+                    <p>Antivirus systems scan millions of files across a computer, checking for malware. Traditional methods scan sequentially, leading to high resource usage and slow performance.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><i class="fas fa-cogs"></i></div>
+                    <h3>Optimization Needs</h3>
+                    <p>Intelligent optimization is needed to reduce scan time, minimize system load, and prioritize high-risk areas without compromising security.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Digital Model -->
+    <section id="model" class="section">
+        <div class="container">
+            <h2>The Digital Model: ACO in Antivirus</h2>
+            <p class="section-subtitle">Mapping biological behavior to computational optimization</p>
+            <div class="flow-cards">
+                <div class="flow-card-item">
+                    <div class="card-icon"><i class="fas fa-folder"></i></div>
+                    <h3>System Files</h3>
+                    <p>Represent the search space</p>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-card-item">
+                    <div class="card-icon"><i class="fas fa-bug"></i></div>
+                    <h3>Ants as Agents</h3>
+                    <p>Scanning agents exploring files</p>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-card-item">
+                    <div class="card-icon"><i class="fas fa-route"></i></div>
+                    <h3>File Paths</h3>
+                    <p>Scan paths through the system</p>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-card-item">
+                    <div class="card-icon"><i class="fas fa-smog"></i></div>
+                    <h3>Pheromone Values</h3>
+                    <p>Probability of threats</p>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-card-item">
+                    <div class="card-icon"><i class="fas fa-brain"></i></div>
+                    <h3>Learning Process</h3>
+                    <p>Prioritizes risky files over time</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Improvements -->
+    <section id="improvements" class="section alt-bg">
+        <div class="container">
+            <h2>How ACO Improves Antivirus Systems</h2>
+            <div class="improvements-grid">
+                <div class="improvement-item">
+                    <i class="fas fa-clock"></i>
+                    <span>Reduces full-system scan time</span>
+                </div>
+                <div class="improvement-item">
+                    <i class="fas fa-bolt"></i>
+                    <span>Detects threats faster</span>
+                </div>
+                <div class="improvement-item">
+                    <i class="fas fa-cogs"></i>
+                    <span>Improves resource management</span>
+                </div>
+                <div class="improvement-item">
+                    <i class="fas fa-ban"></i>
+                    <span>Avoids repeated scanning of safe files</span>
+                </div>
+                <div class="improvement-item">
+                    <i class="fas fa-route"></i>
+                    <span>Enables intelligent path selection</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Applications -->
+    <section id="applications" class="section">
+        <div class="container">
+            <h2>Engineering Applications</h2>
+            <div class="apps-grid">
+                <div class="app-item">
+                    <i class="fas fa-robot"></i>
+                    <h3>AI-Based Optimization</h3>
+                    <p>Nature-inspired algorithms in machine learning</p>
+                </div>
+                <div class="app-item">
+                    <i class="fas fa-lock"></i>
+                    <h3>Cybersecurity Engineering</h3>
+                    <p>Advanced threat detection systems</p>
+                </div>
+                <div class="app-item">
+                    <i class="fas fa-code"></i>
+                    <h3>Data Structures & Algorithms</h3>
+                    <p>Graph theory and optimization techniques</p>
+                </div>
+                <div class="app-item">
+                    <i class="fas fa-network-wired"></i>
+                    <h3>Network Routing</h3>
+                    <p>Efficient data packet routing</p>
+                </div>
+                <div class="app-item">
+                    <i class="fas fa-brain"></i>
+                    <h3>Intelligent System Design</h3>
+                    <p>Adaptive and self-learning systems</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Table -->
+    <section id="comparison" class="section alt-bg">
+        <div class="container">
+            <h2>Normal vs ACO-Based Antivirus</h2>
+            <div class="comparison-card">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Aspect</th>
+                            <th>Normal Scanning</th>
+                            <th>ACO-Based Scanning</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Scan Method</td>
+                            <td>Sequential file-by-file</td>
+                            <td>Intelligent path prioritization</td>
+                        </tr>
+                        <tr>
+                            <td>Speed</td>
+                            <td>Slow, full system scans</td>
+                            <td>Fast, focused on high-risk areas</td>
+                        </tr>
+                        <tr>
+                            <td>CPU Usage</td>
+                            <td>High during full scans</td>
+                            <td>Optimized, lower overall usage</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Route Optimization -->
+    <section id="route-optimizer" class="section">
+        <div class="container">
+            <h2>Delivery Route Optimization with ACO</h2>
+            <p class="section-subtitle">Real-world application: Finding the shortest delivery route</p>
+
+            <div class="simulation-card">
+                <div class="simulation-header">
+                    <h3>ACO Route Planner</h3>
+                    <p>Click on the map to add delivery locations. Then run the ACO algorithm to find the optimal route. Watch as ants explore different paths and learn the best solution.</p>
+                </div>
+
+                <canvas id="route-canvas" style="display: block; width: 100%; height: auto; margin: 20px 0;"></canvas>
+
+                <div class="simulation-controls">
+                    <button id="add-location-btn">Add Location (Click Map)</button>
+                    <button id="run-aco-btn">Run ACO Optimizer</button>
+                    <button id="compare-btn">Compare with Random Route</button>
+                    <button id="clear-route-btn">Clear All</button>
+                </div>
+
+                <div class="route-stats">
+                    <div class="stat-item">
+                        <label>Locations Added:</label>
+                        <span id="location-count">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <label>Best Route Distance:</label>
+                        <span id="best-distance">0 km</span>
+                    </div>
+                    <div class="stat-item">
+                        <label>Optimization Progress:</label>
+                        <span id="optimization-progress">0%</span>
+                    </div>
+                    <div class="stat-item">
+                        <label>Efficiency Gain:</label>
+                        <span id="efficiency-gain">-</span>
+                    </div>
+                </div>
+
+                <div class="simulation-legend">
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: #ff6b6b;"></div>
+                        <span>Warehouse (Start)</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: #4ecdc4;"></div>
+                        <span>Delivery Locations</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: #ffd93d;"></div>
+                        <span>Optimal Route</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: rgba(100, 100, 100, 0.3);"></div>
+                        <span>Ant Pheromone</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Simulation -->
+    <section id="simulation" class="section alt-bg">
+        <div class="container">
+            <h2>File Detection Simulation</h2>
+            <p class="section-subtitle">Watch ants detect threats in your file system</p>
+
+            <div class="simulation-card">
+                <div class="simulation-header">
+                    <h3>ACO File Scanner</h3>
+                    <p>Click "Start Scan" to watch ants navigate through files, finding threats (red) and safe files (green). Green trails show high-confidence threat paths.</p>
+                </div>
+
+                <img id="base-map" src="map-demo.jpg" alt="Map" style="display:none;">
+                <canvas id="file-scan-canvas" style="border: 1px solid #ddd; width: 100%; margin: 20px 0; display: block;"></canvas>
+
+                <div class="simulation-controls">
+                    <button id="start-scan-btn">Start Scan</button>
+                    <button id="stop-scan-btn">Stop Scan</button>
+                    <button id="reset-scan-btn">Reset</button>
+                </div>
+
+                <div class="simulation-legend">
+                    <div class="legend-item">
+                        <div class="legend-color ant"></div>
+                        <span>Ant Agents</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color threat"></div>
+                        <span>Infected Files</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color safe"></div>
+                        <span>Safe Files</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color pheromone"></div>
+                        <span>Threat Path (Pheromone)</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scan-stats">
+                <div class="stat-item">
+                    <label>Files Scanned:</label>
+                    <span id="files-scanned">0</span>
+                </div>
+                <div class="stat-item">
+                    <label>Threats Found:</label>
+                    <span id="threats-found">0</span>
+                </div>
+                <div class="stat-item">
+                    <label>Scan Progress:</label>
+                    <span id="scan-progress">0%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conclusion -->
+    <section id="conclusion" class="section alt-bg">
+        <div class="container">
+            <h2>Conclusion</h2>
+            <div class="conclusion-card">
+                <p>Nature-inspired algorithms like Ant Colony Optimization help make cybersecurity systems smarter, faster, and more efficient. By mimicking ant behavior, we create powerful tools for engineering challenges in the digital world.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p> Ant Colony Algorithms | Developed by Suhani, Akhira, Sai Neha</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
